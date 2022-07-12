@@ -1,7 +1,7 @@
 class Solution {
     public int singleNumber(int[] nums) {
-        int arr[] = new int[(3 * 10000)];
-        int arrn[] = new int[(3 * 10000)];
+        int arr[] = new int[(int)((3 * 10000)/1.5)];
+        int arrn[] = new int[(int)((3 * 10000)/1.5)];
         for(int i = 0; i < nums.length; i++){
             if(nums[i] < 0)
                 arrn[-nums[i]]++;
