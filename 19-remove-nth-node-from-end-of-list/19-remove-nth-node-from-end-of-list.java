@@ -13,9 +13,6 @@ class Solution {
         if(head.next == null){
             return null;
         }
-        if(head.next.next == null && n == 2){
-            return head.next;
-        }
         ListNode x = head;
         for(int i = n; i > 0; i--)
             x = x.next;
